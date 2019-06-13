@@ -2,6 +2,7 @@
 #include<stdio.h>
 #include<string.h>
 #include<stdlib.h>
+#include <iostream>
 
 /* M A I N for testing purpose */
 int main()
@@ -20,6 +21,9 @@ int main()
     printf("s3: %s, len: %d\n", s3.c_str(), s3.size());
     printf("s4: %s, len: %d\n", s4.c_str(), s4.size());
     printf("s5: %s, len: %d\n", s5.c_str(), s5.size());
+    printf("----> %s\n", s1.c_str());
+    std::cout << s1.c_str() << std::endl;
+
 
     printf("\n");
     s1.clear();

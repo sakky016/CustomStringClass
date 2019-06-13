@@ -13,7 +13,8 @@
 CustomString::CustomString()
 {
     printf("Constructor-0 called\n");
-    m_ptr = nullptr;
+    m_ptr = (char *)malloc(sizeof(char));
+    m_ptr[0] = '\0';  // To prevent crash if there is an empty string (observed if cout is used)
     m_len = 0;
 }
 
